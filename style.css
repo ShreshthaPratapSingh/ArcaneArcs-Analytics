@@ -1,12 +1,14 @@
-body{
+body {
     background-color: rgb(0, 0, 46);
 }
-.navItems{
+
+.navItems {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.ListItems{
+
+.ListItems {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -16,18 +18,118 @@ body{
     font-family: "Play", sans-serif;
     font-size: 1.5em;
 }
-.ListItems li:hover{
-   cursor: pointer;
-   text-shadow: 0px 0px 20px grey, 0px 0px 20px grey;
+
+.ListItems li:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 20px grey, 0px 0px 20px grey;
 }
-.Logo{
+
+.Logo {
     width: 10vw;
     height: 100px;
 }
-.Heading{
+
+.Heading {
     font-size: 3em;
     color: white;
     margin: 20px;
     font-family: "Play", sans-serif;
     font-weight: 900;
+}
+
+.cards {
+    background-color: black;
+    width: 95vw;
+    height: 15vh;
+    margin: auto;
+}
+
+.Game_img {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.game-card {
+    width: 260px;
+    background: linear-gradient(135deg, #1e1f29, #2a2b38);
+    padding: 16px;
+    border-radius: 20px;
+    position: relative;
+     flex: 0 0 auto;       
+    width: 240px;   
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.rank-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    background: #ffbf00;
+    color: #000;
+    font-weight: 700;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.game-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 12px;
+}
+
+.game-title {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.rating-section {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rating-count {
+    color: #b7b7b7;
+    font-size: 14px;
+}
+
+.TrendingCards_container{
+    display: flex;
+    overflow-x: auto;     
+    gap: 20px;           
+    padding: 10px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.TrendingCards_container::-webkit-scrollbar {
+    display: none;
+}
+
+.TrendingCards_container {
+    scrollbar-width: none;
+}
+
+.TrendingCards_container {
+    -ms-overflow-style: none;
 }
