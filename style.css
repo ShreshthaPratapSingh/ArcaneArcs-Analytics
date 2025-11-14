@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(0, 0, 46);
+}
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListItems{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: rgb(187, 187, 187);
+    gap: 10px;
+    margin: 30px;
+    font-family: "Play", sans-serif;
+    font-size: 1.5em;
+}
+.ListItems li:hover{
+   cursor: pointer;
+   text-shadow: 0px 0px 20px grey, 0px 0px 20px grey;
+}
+.Logo{
+    width: 10vw;
+    height: 100px;
+}
+.Heading{
+    font-size: 3em;
+    color: white;
+    margin: 20px;
+    font-family: "Play", sans-serif;
+    font-weight: 900;
+}
