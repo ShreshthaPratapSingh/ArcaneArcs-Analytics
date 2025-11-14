@@ -194,6 +194,52 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
+.page2{
+    display: none;
+}
+/* Explore page search bar inside page3 */
+.page3 .explore-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.page3 .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.page3 .search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+}
+
+.page3 .search-bar button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e1f29;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.page3 .search-bar button:hover {
+    background-color: #2a2b38;
+}
+
+.page3{
+    display:none;
+}
+
+
+
+
 
 
 

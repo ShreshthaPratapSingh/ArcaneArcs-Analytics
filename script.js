@@ -1,4 +1,5 @@
 function createGameCard(game) {
+    console.log(game);
     const card = document.createElement("div");
     card.className = "game-card";
 
@@ -29,7 +30,6 @@ function createGameCard(game) {
     ratingCount.className = "rating-count";
     ratingCount.textContent = `(${game.ratingCount})`;
 
-    // append everything
     ratingSection.appendChild(rating);
     ratingSection.appendChild(ratingCount);
 
@@ -48,7 +48,7 @@ async function loadGames() {
 
     const res = await fetch(url);
     const data = await res.json();
-
+    
     data.results.forEach((game, index) => {
         const card = createGameCard({
             rank: index + 1,
