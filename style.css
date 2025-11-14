@@ -184,6 +184,16 @@ body {
     font-size: 14px;
 }
 
+.chart-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1e1f29;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
 
 
 

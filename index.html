@@ -17,8 +17,9 @@
             <div class="navItems">
                 <img src="./images/Logo.png" alt="" class="Logo">
                 <ul class="ListItems">
-                    <li>Dashboard</li>
-                    <li>Games</li>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>E-Sports</li>
                     <li>Live Streams</li>
                     <li>Search</li>
                     <li>About</li>
@@ -39,10 +40,17 @@
         <div id="popular-month">
             <h2 class="Heading">🏅 Popular Games This Month:</h2>
             <div id="popular-games-container" class="pop-grid">
-                 
+
             </div>
         </div>
+        <div class="Heading">📊 Genre Popularity Chart</div>
+
+        <div class="chart-container">
+            <canvas id="genreChart"></canvas>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="genre.js"></script>
     <script src="script.js"></script>
     <script src="trendingMonth.js"></script>
 </body>
